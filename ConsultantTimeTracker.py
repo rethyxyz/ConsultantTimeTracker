@@ -10,6 +10,7 @@ import sys
 import tempfile
 import time
 import tkinter as tk
+import rethyxyz.rethyxyz
 
 # Function prototype in Windows API
 SetWindowDisplayAffinity = ctypes.windll.user32.SetWindowDisplayAffinity
@@ -185,8 +186,8 @@ class TimeTracker(tk.Tk):
         self.resizable(False, True)  # Prevent resizing
 
 if __name__ == "__main__":
+    rethyxyz.rethyxyz.show_intro("ConsultantTimeTracker")
     app = TimeTracker()
-    # Style configuration for the active (current
 
     # Style configuration for the active (current) project button
     style = ttk.Style()
